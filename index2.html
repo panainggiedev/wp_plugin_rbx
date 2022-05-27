@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/w3.css" rel="stylesheet">
+    <title>Carrers</title>
+</head>
+<body>
+    <div id="rbp-plugin-container">
+        <div id="filters"  class="w3-row">
+            <div class="w3-container" id="rbp-find-jobs">
+                <!-- <h2 class="service-title w3-text-dark-gray"><b>Find Jobs at Planate</b></h2>  -->
+            </div>
+            <div class="w3-panel">
+                <form id="filter-search-form" action="" method="">
+                    <div class="w3-row">
+                    
+                            <input id="search" type="text" class="w3-input w3-border " placeholder="Search Job Title Here"/>
+                            <!-- <label for="filter-search">Search</label> -->
+                    </div>
+                    <div class="w3-row">
+                    <div class="w3-col w3-margin-top">
+                        <a href="#rbp-find-jobs" class="w3-button w3-teal w3-medium"><i class="fa fa-search "></i> Search</a>
+                    </div>
+                    </div>
+                </form>
+            </div>
+      
+        </div>
+        <div id="match-list" tabindex=0 >
+            <div class="w3-margin">
+                <h3 class="w3-text-gray w3-center" tabindex=0 >Loading jobs</h3>
+            </div>
+        </div>
+    
+        <div class="row w3-center w3-margin">
+            <div class="container">
+                <div id="pagination" class="w3-bar">
+                    <a href="#rbp-find-jobs" class="rbp-paginate w3-bar-item w3-button w3-hover-light-gray w3-light-gray"><<</a>
+                    <span id="rbp-pages" style="display:inline">
+                        <a href="#" class="rbp-paginate w3-bar-item w3-button w3-hover-light-gray">1</a>
+                        <a href="#" class="rbp-paginate w3-bar-item w3-button w3-hover-light-gray">2</a>
+                        <a href="#" class="rbp-paginate w3-bar-item w3-button w3-hover-light-gray">3</a>
+                        <a href="#" class="rbp-paginate w3-bar-item w3-button w3-hover-light-gray">4</a>
+                        <a href="#" class="rbp-paginate w3-bar-item w3-button w3-hover-light-gray">5</a>
+                    </span>
+                    <a href="#rbp-find-jobs" class="rbp-paginate w3-bar-item w3-button w3-teal">>></a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="load-modal" class="w3-modal">
+            <div class="w3-modal-content">
+                <span onclick="document.getElementById('load-modal').style.display='none'"
+                        class="w3-button w3-display-topright">&times;</span>
+                <div class="rbp-modal-content">
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div id="job-modal" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <div class="rbp-modal-content"  style="padding-bottom:150px;">
+    
+                        <span id="job-details-area">
+                        
+                            <h2 class="job-container job-title"></h2>
+                            
+                            <div class="job-container job-content"></div>
+    
+                               <div class="w3-row ">
+                                <a class="w3-button w3-teal job-apply">Apply Now</a>
+                            </div>
+    
+                        </span> 
+    
+    
+    
+    
+                        <div id="job-application">
+                            <p><strong>Fill up the form to apply</strong></p>
+                            <div id="general-errors" class="w3-text-red"></div>
+                            
+                            <div class="rbp-modal-content">
+                                <form id="job-form" action="" method="POST" class=""  enctype="multipart/form-data">
+                                </form>
+                            </div>
+    
+                            
+                        </div>
+                        
+                    </div>
+                    <span id="rb-close-modal" onclick="document.getElementById('job-modal').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                </div>
+            </div>
+        </div>
+    
+        <div id="eeoc-modal" class="w3-modal">
+    
+            <div class="w3-modal-content" style="padding-bottom:150px;">
+                <div class="w3-container ">
+                    <span onclick="document.getElementById('eeoc-modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <form id="eeocform" class="rbp-modal-content" method="POST">
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

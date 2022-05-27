@@ -1,0 +1,169 @@
+#rbp-plugin-container
+{
+    color:#333!important;
+}
+#rbp-plugin-container p
+{
+
+    margin: 1em 0 1em 0;
+
+}
+#rbp-plugin-container ul
+{
+    list-style: circle;
+    font-size:1em;
+}
+
+.w3-input:focus{
+    outline: 1px solid red;
+}
+.w3-button:focus{
+    outline: 1px solid red;
+}
+
+.job-listing:focus{
+    outline: 1px solid red;
+
+}
+
+.w3-select, .w3-input
+{
+    padding: 10px 15px!important;
+    border-radius: 3px;
+}
+.w3-select
+{
+    color: #0CA9A2;
+}
+.w3-select option
+{
+    color: #757575;
+}
+.w3-button
+{
+    border-radius: 3px;
+}
+#pagination a
+{
+    margin: 5px;
+}
+.material-icons
+{
+    vertical-align: bottom;
+    line-height: 1.1;
+}
+.job-card
+{
+    cursor: pointer;
+}
+
+.job-title
+{
+    margin-top:0px;
+}
+
+.rbp-borderized
+{
+    border-radius: 5px;
+}
+
+.rbp-clickable:hover
+{
+    cursor: pointer;
+}
+
+a.rbp-link{
+    text-decoration: none;
+}
+
+.rbp-modal-content{
+    padding: 20px;
+}
+
+.rbp-modal-content img{
+    width: 100%;
+}
+.w3-select, .w3-input {
+    width: 100%!important;
+}
+
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #0CA9A2 ;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
